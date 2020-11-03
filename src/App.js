@@ -1,5 +1,13 @@
 // import logo from './logo.svg';
-import './App.scss';
+// import './App.scss';
+
+// react router
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Link
+} from "react-router-dom";
 
 // redux
 import { useSelector, useDispatch } from 'react-redux';
@@ -14,13 +22,15 @@ function App() {
 	const dispatch = useDispatch();
 
   return (
-    <div className="App">
-      <h1>eCommerce App</h1>
-			
-			<StoreItem />
-			<StoreItem />
-			<StoreItem />
-    </div>
+    <Router>
+			<div className="App">
+				<h1>eCommerce App</h1>
+				
+				<StoreItem />
+				<StoreItem />
+				<StoreItem />
+			</div>
+		</Router>
   );
 }
 
