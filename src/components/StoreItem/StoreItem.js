@@ -4,9 +4,11 @@ import styles from './StoreItem.module.scss';
 export default function StoreItem() {
 	return (
 		<div>
-			<h2 className={styles.red}>Store Item</h2>
-			<p className={styles.blue}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam fugiat distinctio numquam.</p>
-			<img src="http://placekitten.com/200/300" alt="placekitten"/>
+			<img src="http://placekitten.com/200/300" alt="placekitten" />
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+			<p>Reviews: 5/5⭐</p>
+			<p className={styles.cost}>CDN $42.00</p>
+			
 		</div>
 	)
 }

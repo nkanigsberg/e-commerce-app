@@ -1,5 +1,5 @@
-// import logo from './logo.svg';
-// import './App.scss';
+// base styles
+import './App.scss';
 
 // react router
 import {
@@ -13,7 +13,8 @@ import {
 import { useSelector, useDispatch } from 'react-redux';
 
 // components
-import StoreItem from './components/StoreItem/StoreItem';
+import Header from './components/Header/Header';
+import Gallery from './components/Gallery/Gallery';
 
 
 function App() {
@@ -24,11 +25,15 @@ function App() {
   return (
     <Router>
 			<div className="App">
-				<h1>eCommerce App</h1>
+				<Route path="/">
+					<Header />
+				</Route>
 				
-				<StoreItem />
-				<StoreItem />
-				<StoreItem />
+				<Route path="/">
+					<main>
+						<Gallery />
+					</main>
+				</Route>
 			</div>
 		</Router>
   );
